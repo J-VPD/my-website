@@ -97,7 +97,7 @@ nav a:hover {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), 
-                url('./images/dna-analysis.jpg');
+                url('images/dna-analysis.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -243,13 +243,11 @@ nav a:hover {
     position: relative;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    .about-image {
-    background-image: url('/my-website/images/microscope.jpg');
+    background-image: url('images/microscope.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
-}
-
 
 /* 画像が読み込まれない場合のフォールバック */
 .about-image::before {
@@ -349,7 +347,10 @@ nav a:hover {
 }
 
 .prenatal-care-image {
-    background: url('./images/consultation.jpg') center/cover;
+    background-image: url('images/consultation.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* 画像が読み込まれない場合のフォールバック */
@@ -585,10 +586,10 @@ nav a:hover {
 .contact {
     padding: 8rem 0;
     background: linear-gradient(135deg, rgba(44, 62, 80, 0.9), rgba(52, 73, 94, 0.8)), 
-                url('./images/pregnancy.jpg');
+                url('images/pregnancy.jpg');
     background-size: cover;
     background-position: center;
-    background-blend-mode: overlay;
+    background-attachment: fixed;
     color: white;
     position: relative;
 }
