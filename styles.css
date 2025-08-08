@@ -244,6 +244,9 @@ nav a:hover {
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     background: url('./images/microscope.jpg') center/cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* 画像が読み込まれない場合のフォールバック */
